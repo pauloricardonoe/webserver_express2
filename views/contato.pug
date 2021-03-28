@@ -1,0 +1,16 @@
+doctype html
+head
+    title Contato
+body
+    h1 Contato
+    block content
+        form(action='/contato', method='post')
+            p Nome
+            input(type="text",     name="nome",   placeholder="Nome", required)
+            p Email
+            input(type="email",    name="email",  placeholder="Email", required)
+            p Mensagem
+            textarea(name="mensagem", placeholder="Mensagem", rows=10, cols=80, required)
+            p
+            button(type="submit")
+                | Enviar
